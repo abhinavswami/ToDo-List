@@ -19,22 +19,22 @@ export default {
   data() {
     return {
       todos: [{
-          title: 'Toda A',
+          title: 'Todo A',
           project: 'Project A',
           done: false
         },
         {
-          title: 'Toda B',
+          title: 'Todo B',
           project: 'Project B',
           done: true
         },
         {
-          title: 'Toda C',
+          title: 'Todo C',
           project: 'Project C',
           done: false
         },
         {
-          title: 'Toda D',
+          title: 'Todo D',
           project: 'Project D',
           done: false
         }
