@@ -4,6 +4,7 @@
   "description": "ToDo List using Vue.js",
   "author": "Abhinav Swami <abhinav.swami21@gmail.com>",
   "private": true,
+  "main" : "start.js",
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
@@ -11,6 +12,7 @@
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
+    "electron": "^1.7.5",
     "vue": "^2.3.3"
   },
   "devDependencies": {
