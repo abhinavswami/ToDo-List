@@ -3,16 +3,18 @@
   <!--<img src="./assets/logo.png">-->
   <todo-list v-bind:todos="todos">
   </todo-list>
+  <create-todo v-on:create-todo="createTodo"></create-todo>
 </div>
 </template>
 
 <script>
 import TodoList from './components/TodoList'
-
+import CreateTodo from './components/CreateTodo'
 export default {
   name: 'app',
   components: {
-    TodoList
+    TodoList,
+    CreateTodo
   },
   // data function avails to the template
 
@@ -39,6 +41,11 @@ export default {
           done: false
         }
       ]
+    }
+  },
+  methods: {
+    createTodo(todo) {
+      this.todos.push(todo)
     }
   }
 }
