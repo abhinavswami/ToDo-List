@@ -43,8 +43,8 @@
   <div class='ui bottom attached green basic button' v-show="todo.done">
     Completed
   </div>
-  <div class='ui bottom attached red basic button' v-show="!todo.done">
-    Complete
+  <div class='ui bottom attached red basic button' v-show="!todo.done" v-on:click="completeTodo(todo)">
+    Pending
   </div>
   <br/>
 </div>
@@ -67,6 +67,9 @@ export default {
     },
     deleteTodo(todo) {
       this.$emit('delete-todo', todo)
+    },
+    completeTodo(todo) {
+      this.$emit('complete-todo', todo)
     }
 
   }
